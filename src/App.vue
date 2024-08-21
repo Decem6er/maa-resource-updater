@@ -1,7 +1,7 @@
 <template>
   <h1 class="text-center">MAA Resource Updater</h1>
   <p class="text-center">
-    无需依赖任何第三方软件，纯靠浏览器工作的
+    无需依赖任何第三方软件，纯靠浏览器工作的，使用了 gitclone.com 来加速更新
     <a href="https://github.com/MaaAssistantArknights/MaaResource" target="_blank">MAA 资源文件</a> 更新器
   </p>
   <p class="text-center">仅支持：Chrome ≥ 86, Edge ≥ 86, Opera ≥ 72</p>
@@ -118,7 +118,7 @@ const handlePickDir = async () => {
 };
 
 const gitClientPromise = createGitClient(
-  'https://github.com/MaaAssistantArknights/MaaResource',
+  'https://gitclone.com/github.com/MaaAssistantArknights/MaaResource.git',
   proxy(data => {
     gitProgress.value = data;
   }),
